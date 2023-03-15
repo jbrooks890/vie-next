@@ -1,0 +1,47 @@
+.flex.col > .block {
+  align-self: center;
+}
+
+.block:not(.flex.col .block) {
+  margin: 0 auto;
+}
+
+.even > * {
+  width: 50%;
+}
+
+.frame-width {
+  max-width: var(--frame);
+}
+
+.max-width {
+  width: 100%;
+}
+
+.exhibit-body {
+  /* composes: flex from "./globals.css"; */
+  padding: 1rem;
+}
+
+.exhibit-body p {
+  text-align: justify;
+  text-shadow: 1px 1px 2px var(--drop-shadow);
+}
+
+/* .block:nth-of-type(odd) .exhibit-body.flex.col {
+  align-items: flex-end;
+} */
+
+.exhibit-body:global.flex.col {
+  align-items: flex-end;
+}
+
+.exhibit-feature {
+  position: relative;
+}
+
+.exhibit-feature img {
+  width: 100%;
+  /* object-fit: cover; */
+  object-fit: contain;
+}

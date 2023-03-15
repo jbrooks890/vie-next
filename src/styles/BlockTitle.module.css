@@ -1,0 +1,16 @@
+.block-title:global.flex {
+  display: inline-flex;
+}
+
+.block-title h2,
+.block-title h3 {
+  margin: 0;
+  line-height: 1em;
+}
+
+.block-title h3 {
+  align-self: flex-end;
+  padding-top: 0.25em;
+  padding-left: 1em;
+  border-top: 1.5px solid var(--gold);
+}

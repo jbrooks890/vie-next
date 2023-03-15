@@ -1,0 +1,30 @@
+.img {
+  display: inline-block;
+  transition: 0.2s ease-out;
+}
+
+.lightbox {
+  cursor: pointer;
+}
+
+.shadow {
+  filter: drop-shadow(2px 2px 3px var(--shadow));
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+/* ====================================== **
+|| HOVER
+** ====================================== */
+@media (hover: hover) {
+  .lightbox:global:not(.modal img):hover {
+    transform: scale(1.01);
+    transition-delay: 1s;
+  }
+}

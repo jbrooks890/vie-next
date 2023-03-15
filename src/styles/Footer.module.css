@@ -1,0 +1,6 @@
+.footer {
+  padding: 1rem;
+  height: calc(var(--grid) * 6);
+  background-color: var(--darker);
+  color: var(--pop);
+}

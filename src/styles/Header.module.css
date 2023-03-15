@@ -1,0 +1,6 @@
+.header {
+  position: absolute !important;
+  inset: 0 0 auto;
+  height: var(--header-size);
+  z-index: 1000;
+}

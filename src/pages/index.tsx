@@ -1,14 +1,13 @@
+import { useState } from "react";
+import { remark } from "remark";
 import Head from "next/head";
 import Image from "next/image";
-// import styles from "@/styles/Home.module.css";
-import { useState } from "react";
-// import Markdown from "markdown-to-jsx";
-import Page from "../components/shared/Page";
-import Section from "../components/shared/Section";
-import BlockTitle from "../components/frags/BlockTitle";
-import Exhibit from "../components/blocks/Exhibit";
-import Img from "../components/frags/Img";
-import { remark } from "remark";
+import Markdown from "markdown-to-jsx";
+import Page from "@/components/shared/Page";
+import Section from "@/components/shared/Section";
+import BlockTitle from "@/components/frags/BlockTitle";
+import Exhibit from "@/components/blocks/Exhibit";
+import Img from "@/components/frags/Img";
 import html from "remark-html";
 import fs from "fs";
 import matter from "gray-matter";
@@ -50,8 +49,7 @@ export default function Home({
                 title={text.frontMatter.title}
                 subtitle={text.frontMatter.subtitle}
               />
-              <div dangerouslySetInnerHTML={{ __html: text.content }} />
-              {/* ^^ TODO: FIND ALTERNATIVE ^^ */}
+              <Markdown>{text.content}</Markdown>
               <button>Learn More</button>
             </>
           }
